@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll('a[href^="#"]');
   const contactForm = document.querySelector(".contact-form");
 
-  if (revealItems.length) {
+  if (revealItems.length && "IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries, sectionObserver) => {
         entries.forEach((entry) => {
@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     revealItems.forEach((item) => observer.observe(item));
+  } else if (revealItems.length) {
+    revealItems.forEach((item) => item.classList.add("visible"));
   }
 
   if (topbar) {
