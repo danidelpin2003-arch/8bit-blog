@@ -3,140 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LUMÉ | Regalos personalizados premium</title>
+    <title>LUMÉ Atelier | Regalos personalizados premium</title>
     <meta
       name="description"
-      content="LUMÉ transforma tus recuerdos en regalos personalizados premium: revista personalizada, memory box y photobooks de viaje."
+      content="LUMÉ Atelier transforma memorias en piezas editoriales y regalos premium: revistas personalizadas, memory boxes y photobooks de viaje."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
     <header class="hero" id="inicio">
-      <nav class="topbar">
-        <a class="brand" href="#inicio">LUMÉ</a>
-        <a class="whatsapp-link" href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <nav class="topbar" aria-label="Principal">
+        <a class="brand" href="index.html">LUMÉ</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+          Menú
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Nosotros</a>
+          <a href="contact.html">Contacto</a>
+          <a class="button-link" href="#colecciones">Colecciones</a>
+        </div>
       </nav>
-      <div class="hero-content container">
-        <p class="eyebrow">Regalos emocionales premium</p>
-        <h1>Transforma tus recuerdos en regalos inolvidables</h1>
-        <p class="hero-subtitle">Regalos personalizados diseñados para contar tu historia</p>
-        <a class="cta-button" href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">Crear mi regalo</a>
+
+      <div class="hero-content container reveal">
+        <p class="eyebrow">Atelier de regalos editoriales</p>
+        <h1>Diseñamos recuerdos que se sienten como una obra de lujo.</h1>
+        <p class="hero-subtitle">
+          Convertimos tus historias en piezas cuidadosamente curadas para celebrar momentos
+          extraordinarios.
+        </p>
+        <div class="hero-actions">
+          <a class="cta-button" href="contact.html">Iniciar proyecto</a>
+          <a class="text-link" href="#proceso">Conocer el proceso</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="about section container reveal">
-        <h2>Sobre LUMÉ</h2>
-        <p>
-          LUMÉ crea regalos personalizados a partir de tus fotos, mensajes y momentos especiales,
-          convirtiéndolos en experiencias únicas y significativas.
-        </p>
-      </section>
-
-      <section class="products section container">
+      <section class="section featured container" id="colecciones">
         <div class="section-heading reveal">
-          <h2>Productos pensados para emocionar</h2>
-          <p>Diseños editoriales y detalles premium para convertir historias en recuerdos tangibles.</p>
+          <p class="eyebrow">Colecciones</p>
+          <h2>Experiencias premium para regalar con intención</h2>
         </div>
 
-        <div class="product-grid">
+        <div class="card-grid">
           <article class="product-card reveal">
-            <h3>📖 Revista Personalizada</h3>
-            <ul class="prices">
-              <li><span>Plantilla</span><strong>$89.900 COP</strong></li>
-              <li><span>Desde cero</span><strong>$119.900 COP</strong></li>
-            </ul>
-            <ul class="features">
-              <li>Diseño personalizado con fotos y textos</li>
-              <li>Revista impresa</li>
-              <li>Empaque listo para regalar</li>
-              <li>Tote bag incluida</li>
-            </ul>
+            <p class="card-label">Editorial</p>
+            <h3>Revista Personalizada</h3>
+            <p>
+              Un formato magazine de autor para narrar aniversarios, historias de pareja o hitos
+              familiares.
+            </p>
+            <a href="contact.html" class="inline-link">Diseñar la mía</a>
           </article>
 
           <article class="product-card product-card--featured reveal">
-            <span class="badge">Experiencia completa para regalar</span>
-            <h3>🎁 Memory Box</h3>
-            <ul class="prices">
-              <li><span>Con revista plantilla</span><strong>$149.900 COP</strong></li>
-              <li><span>Con revista desde cero</span><strong>$169.900 COP</strong></li>
-            </ul>
-            <ul class="features">
-              <li>Revista personalizada</li>
-              <li>Caja de regalo</li>
-              <li>10 fotos tipo polaroid</li>
-              <li>Vela aromática</li>
-              <li>Bolígrafo</li>
-              <li>Papel envoltura y carta</li>
-            </ul>
+            <p class="card-label">Signature</p>
+            <h3>Memory Box</h3>
+            <p>
+              La experiencia completa: revista + detalles sensoriales + empaque de colección listo
+              para sorprender.
+            </p>
+            <a href="contact.html" class="inline-link">Solicitar propuesta</a>
           </article>
 
           <article class="product-card reveal">
-            <h3>📘 Photobook de Viajes</h3>
-            <ul class="prices">
-              <li><span>50 páginas</span><strong>$229.900 COP</strong></li>
-              <li><span>100 páginas</span><strong>$329.900 COP</strong></li>
-              <li><span>200 páginas</span><strong>$499.900 COP</strong></li>
-            </ul>
-            <ul class="features">
-              <li>Diseño editorial</li>
-              <li>Alta calidad de impresión</li>
-              <li>Narrativa de viaje personalizada</li>
-            </ul>
+            <p class="card-label">Travel</p>
+            <h3>Photobook de Viaje</h3>
+            <p>
+              Un libro editorial de gran formato para conservar viajes inolvidables con una estética
+              elegante y atemporal.
+            </p>
+            <a href="contact.html" class="inline-link">Ver opciones</a>
           </article>
         </div>
       </section>
 
-      <section class="how-it-works section container reveal">
-        <h2>Cómo funciona</h2>
-        <ol class="steps">
-          <li>Envías tus fotos e historia</li>
-          <li>Diseñamos tu producto</li>
-          <li>Apruebas el diseño</li>
-          <li>Lo imprimimos y enviamos</li>
-        </ol>
+      <section class="section split-section container reveal">
+        <div class="split-copy">
+          <p class="eyebrow">Dirección creativa</p>
+          <h2>Diseño minimalista con carácter emocional.</h2>
+          <p>
+            Cada pieza combina narrativa, curaduría visual y acabados premium para que el resultado
+            se vea tan exclusivo como la historia que cuenta.
+          </p>
+        </div>
+        <div class="split-image" role="img" aria-label="Mesa de trabajo con materiales editoriales"></div>
       </section>
 
-      <section class="testimonials section container reveal">
-        <h2>Testimonios</h2>
-        <div class="testimonial-grid">
-          <blockquote>
-            “El regalo más especial que he dado en mi vida.”
-            <cite>— Camila R.</cite>
-          </blockquote>
-          <blockquote>
-            “Cada página me hizo revivir nuestra historia, fue increíble.”
-            <cite>— Daniel y Sofía</cite>
-          </blockquote>
-          <blockquote>
-            “La presentación, los detalles y la calidad superaron todo.”
-            <cite>— Laura M.</cite>
-          </blockquote>
+      <section class="section split-section split-section--reverse container reveal" id="proceso">
+        <div class="split-copy">
+          <p class="eyebrow">Nuestro proceso</p>
+          <h2>Simple, cuidado y transparente.</h2>
+          <ol class="steps">
+            <li>Brief de estilo y objetivo del regalo.</li>
+            <li>Curaduría de contenido y dirección visual.</li>
+            <li>Validación final antes de producción.</li>
+            <li>Entrega lista para emocionar.</li>
+          </ol>
         </div>
-      </section>
-
-      <section class="final-cta section reveal">
-        <div class="container final-cta-content">
-          <h2>Crea un regalo que realmente importe</h2>
-          <a class="cta-button" href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
-        </div>
+        <div class="split-image split-image--alt" role="img" aria-label="Caja de regalo premium"></div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer-content">
-        <p class="brand">LUMÉ</p>
-        <div class="footer-links">
+      <div class="container footer-grid">
+        <div>
+          <p class="brand">LUMÉ</p>
+          <p class="footer-copy">
+            Atelier de regalos personalizados para marcas y personas que valoran el detalle.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">Navegación</p>
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Nosotros</a>
+          <a href="contact.html">Contacto</a>
+        </div>
+        <div>
+          <p class="footer-title">Contacto</p>
+          <a href="mailto:hola@lumeatelier.com">hola@lumeatelier.com</a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </div>
+      <p class="footer-bottom">© 2026 LUMÉ Atelier. Todos los derechos reservados.</p>
     </footer>
 
     <script src="assets/script.js"></script>

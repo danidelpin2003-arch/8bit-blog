@@ -1,178 +1,103 @@
-<script src="script.js"></script>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - 8.BIT.BLOG</title>
+    <title>Nosotros | LUMÉ Atelier</title>
+    <meta
+      name="description"
+      content="Conoce la visión detrás de LUMÉ Atelier: diseño editorial, sensibilidad estética y regalos premium personalizados."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo">8.BIT.BLOG</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="topbar topbar--page" aria-label="Principal">
+      <a class="brand" href="index.html">LUMÉ</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menú</button>
+      <div class="nav-links" id="site-menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html" aria-current="page">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+        <a class="button-link" href="contact.html">Crear regalo</a>
       </div>
     </nav>
 
-    <div class="content">
-      <div class="main-layout">
-        <!-- Left Column - About Content -->
-        <div class="blog-section">
-          <h1>About 8.BIT.BLOG</h1>
+    <main class="page-main container">
+      <section class="page-intro reveal">
+        <p class="eyebrow">Nuestra historia</p>
+        <h1>Somos un estudio creativo especializado en regalos con narrativa.</h1>
+        <p>
+          LUMÉ Atelier nace para resignificar la manera de regalar: menos productos genéricos, más
+          piezas con intención, diseño y memoria.
+        </p>
+      </section>
+
+      <section class="about-values reveal">
+        <article>
+          <h2>Curaduría visual</h2>
           <p>
-            Welcome to 8.BIT.BLOG, your ultimate destination for everything
-            retro gaming! Founded in 2020 by passionate gaming enthusiasts,
-            we've dedicated ourselves to celebrating the rich history of video
-            games while exploring how classic gaming continues to influence
-            modern game design.
+            Editamos cada imagen y cada palabra para construir una historia coherente, elegante y
+            emocional.
           </p>
-
-          <h2>Our Mission</h2>
+        </article>
+        <article>
+          <h2>Acabados premium</h2>
           <p>
-            We believe that understanding gaming's past is essential to
-            appreciating its future. Our mission is to bridge the gap between
-            nostalgic gaming memories and contemporary gaming culture, providing
-            insights, reviews, and tutorials that matter to both veteran gamers
-            and newcomers alike.
+            Seleccionamos materiales, papel y empaques con estándares de lujo sutil para una
+            experiencia superior.
           </p>
+        </article>
+        <article>
+          <h2>Atención personalizada</h2>
+          <p>
+            Acompañamos todo el proceso contigo: desde la idea inicial hasta la entrega final.
+          </p>
+        </article>
+      </section>
 
-          <h2>What We Cover</h2>
-          <div class="about-topics">
-            <div class="topic-item">
-              <h3>🎮 Retro Gaming</h3>
-              <p>
-                Deep dives into classic consoles, forgotten gems, and the
-                stories behind legendary games that shaped the industry.
-              </p>
-            </div>
-
-            <div class="topic-item">
-              <h3>🔧 Hardware Reviews</h3>
-              <p>
-                Comprehensive reviews of gaming hardware, from vintage consoles
-                to modern retro-inspired devices and accessories.
-              </p>
-            </div>
-
-            <div class="topic-item">
-              <h3>📰 Gaming News</h3>
-              <p>
-                Stay updated with the latest developments in the gaming world,
-                with a special focus on retro gaming communities and releases.
-              </p>
-            </div>
-
-            <div class="topic-item">
-              <h3>🎯 Tutorials & Guides</h3>
-              <p>
-                Step-by-step guides for everything from setting up emulators to
-                building your own arcade cabinet.
-              </p>
-            </div>
-          </div>
+      <section class="split-section split-section--reverse reveal">
+        <div class="split-copy">
+          <p class="eyebrow">Qué nos diferencia</p>
+          <h2>No hacemos solo “regalos”, diseñamos recuerdos de autor.</h2>
+          <p>
+            Nuestra metodología combina estética editorial, branding emocional y logística cuidada
+            para que cada entrega sea inolvidable desde el primer vistazo.
+          </p>
         </div>
-
-        <!-- Right Column - Sidebar -->
-        <div class="sidebar-section">
-          <!-- Categories -->
-          <div class="sidebar-widget">
-            <h3>Categories</h3>
-            <ul class="category-list">
-              <li>
-                <a href="#" class="category-item"
-                  >Retro Gaming <span class="count">(12)</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="category-item"
-                  >Hardware Reviews <span class="count">(8)</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="category-item"
-                  >Gaming News <span class="count">(15)</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="category-item"
-                  >Indie Games <span class="count">(6)</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="category-item"
-                  >Tutorials <span class="count">(9)</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="category-item"
-                  >Game Reviews <span class="count">(11)</span></a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Tags -->
-          <div class="sidebar-widget">
-            <h3>Popular Tags</h3>
-            <div class="tag-cloud">
-              <a href="#" class="tag">NES</a>
-              <a href="#" class="tag">Controllers</a>
-              <a href="#" class="tag">Speedrun</a>
-              <a href="#" class="tag">8-bit</a>
-              <a href="#" class="tag">Vintage</a>
-              <a href="#" class="tag">Nintendo</a>
-              <a href="#" class="tag">Arcade</a>
-              <a href="#" class="tag">PlayStation</a>
-              <a href="#" class="tag">Xbox</a>
-              <a href="#" class="tag">PC Gaming</a>
-              <a href="#" class="tag">Emulation</a>
-              <a href="#" class="tag">Pixel Art</a>
-              <a href="#" class="tag">Chiptune</a>
-              <a href="#" class="tag">Homebrew</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="split-image" role="img" aria-label="Detalle de revista personalizada"></div>
+      </section>
+    </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <h3>8.BIT.BLOG</h3>
-          <p>
-            Your ultimate destination for retro gaming content and modern gaming
-            insights.
+      <div class="container footer-grid">
+        <div>
+          <p class="brand">LUMÉ</p>
+          <p class="footer-copy">
+            Diseño editorial personalizado para celebrar historias importantes con estilo premium.
           </p>
         </div>
-
-        <div class="footer-links">
-          <div class="footer-section">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Topics</h4>
-            <ul>
-              <li><a href="#">Retro Gaming</a></li>
-              <li><a href="#">Modern Gaming</a></li>
-              <li><a href="#">Hardware Reviews</a></li>
-            </ul>
-          </div>
+        <div>
+          <p class="footer-title">Navegación</p>
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Nosotros</a>
+          <a href="contact.html">Contacto</a>
+        </div>
+        <div>
+          <p class="footer-title">Contacto</p>
+          <a href="mailto:hola@lumeatelier.com">hola@lumeatelier.com</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://wa.me/0000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2024 8.BIT.BLOG. All rights reserved.</p>
-      </div>
+      <p class="footer-bottom">© 2026 LUMÉ Atelier. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
